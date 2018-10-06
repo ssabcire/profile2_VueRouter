@@ -10,6 +10,10 @@ func main() {
 
 	mux.HandleFunc("/", index)
 
+	mux.HandleFunc("/skill", skill)
+	mux.HandleFunc("/sns", sns)
+	mux.HandleFunc("usingTech", usingTech)
+
 	server := http.Server{
 		Addr:    "127.0.0.1:8080",
 		Handler: mux,
