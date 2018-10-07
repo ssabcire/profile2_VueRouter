@@ -7,7 +7,7 @@ func skill(w http.ResponseWriter, r *http.Request) {
 }
 
 func sns(w http.ResponseWriter, r *http.Request) {
-	generateHTML(w, "layout", "header", "skill")
+	generateHTML(w, "layout", "header", "sns")
 }
 
 func usingTech(w http.ResponseWriter, r *http.Request) {
