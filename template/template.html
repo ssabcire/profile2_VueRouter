@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>ssabcire_profile</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+	<script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+</head>
+
+<body>
+	<div id="app">
+		<!-- VueRouterで詮索されたものをrouter-viewで表示する -->
+		<router-view></router-view>
+	</div>
+</body>
+
+</html>
+
+
+<!-- 以下コンポーネント用 -->
+
+<!-- ヘッダ, index, skill, snsの4つのコンポーネントを用意 -->
+
+
+<script type="text/x-template" id="hdr">
+<!-- ヘッダ部分のコンポーネントで、VueRouterを適用していく -->
+<ul>
+	<li>
+		<router-link to="/">トップページ</router-link>
+	</li>
+	<li>
+		<router-link to="/skill">スキル</router-link>
+	</li>
+	<li>
+		<router-link to="/sns">sns</router-link>
+	</li>
+</ul>
+</script>
+
+<script type="text/x-template" id="index">
+	<div class="about">
+			<hdr></hdr>
+
+		<h2 class="h2about">About</h2>
+		<p>サーバーサイドorインフラエンジニア志望の大学3年生。1,2年生の間は生活費などをすべて自分で取り繕わなければならなかったため、プログラミングの時間をうまく確保できずPythonの基礎だけをどうにか覚える。</p>
+		<p>3年生からは親から仕送りが来るようになり、バイトを週2に減らし、5-6月はLinuC101取得、8-9月はGo言語の基礎とWebアプリの勉強をする。</p>
+		<p>現在はHTMLとCSSを覚え、Go言語を用いたWeb制作を行っている。</p>
+	</div>
+</script>
+
+<script type="text/x-template" id="skill">
+	<div class="skill">
+		<hdr></hdr>
+
+		<h2>My Skill</h2>
+		<li>html</li>
+		<li>css</li>
+		<li>Golang</li>
+		<li>Python</li>
+		<li>Linux(LinuC101)</li>
+		<li>SQL</li>
+	</div>
+	</script>
+
+<script type="text/x-template" id="sns">
+	<div class="sns">
+			<hdr></hdr>
+
+		<h2>SNS</h2>
+		<ul>
+			<li><a href="https://twitter.com/ssabcire/" target="blank">twitter</a></li>
+			<li><a href="https://ssabcire.hatenablog.com" target="blank">blog</a></li>
+			<li><a href="https://github.com/ssabcire" target="blank">github</a></li>
+		</ul>
+	</div>
+</script>
+
+<script src="./template.js"></script>
