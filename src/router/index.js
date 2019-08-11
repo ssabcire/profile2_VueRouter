@@ -3,7 +3,6 @@ import Router from "vue-router";
 import About from '@/components/about'
 import skill from '@/components/skill'
 import sns from '@/components/sns'
-// import HelloWorld from '@/components/'
 
 // vueとvueRouterにVue.useをしているが、useは他はどのようなものに使う？
 Vue.use(Router);
